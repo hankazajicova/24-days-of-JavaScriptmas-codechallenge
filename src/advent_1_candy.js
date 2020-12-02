@@ -8,5 +8,13 @@ function candies(children, candy) {
     }
 };
 
+
+// function candies(children, candy) {
+//     const candyPerChild = Math.floor(candy / children);
+//     console.log(candyPerChild)
+//     return candyPerChild * children;
+// }
+
 module.exports = candies;
-// console.log(candies(3,10))
+console.log(candies(3,10))
+
