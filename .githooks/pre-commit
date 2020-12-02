@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+echo "pre-commit hook started"
+
+npm install 1>/dev/null # stdout to dev null
+
+npm run test
+
+npm run lint
+
+echo "pre-commit hook ended"

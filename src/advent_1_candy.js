@@ -1,12 +1,12 @@
+'use strict';
 function candies(children, candy) {
-    if (candy%children != 0) {
-        var rest = candy%children;
-        var result = candy - rest;
+    if (candy % children !== 0) {
+        const rest = candy % children;
+        const result = candy - rest;
         return result;
-    } else {
-        return candy;
     }
-};
+    return candy;
+}
 
 
 // function candies(children, candy) {
@@ -16,5 +16,5 @@ function candies(children, candy) {
 // }
 
 module.exports = candies;
-console.log(candies(3,10))
+console.log(candies(3, 10));
 
