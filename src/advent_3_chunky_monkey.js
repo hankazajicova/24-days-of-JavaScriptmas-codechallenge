@@ -6,3 +6,12 @@ function chunkyMonkey(values, size) {
 
 module.exports = chunkyMonkey;
 console.log(chunkyMonkey([0, 1, 2, 3, 4, 5], 4));
+
+// function chunkyMonkey(values, size) {
+//     const nested = [];
+//     let count = 0;
+//     while(count < values.length) {
+//         nested.push(values.slice(count, count += size));
+//     }
+//     return nested;
+// }
