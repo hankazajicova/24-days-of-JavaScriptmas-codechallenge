@@ -8,30 +8,31 @@ expected to show one of the faces randomly.
 event listeners, Math.random()
 */
 
-// Write your code here 👇
-const minDice = 1;
-const maxDice = 6;
+function start() {
+    const dice = document.getElementsByClassName('dice')[0];
+    dice.addEventListener('click', function() {
+        console.info('dice rolled:');
+        getDice();
+    });
+}
 
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 };
 
-const dice = document.getElementsByClassName('dice')[0];
-dice.addEventListener('click', function() {
-    console.info('dice rolled:');
-    getDice();
-});
-
-const dot1 = document.getElementsByClassName('dot1')[0];
-const dot2 = document.getElementsByClassName('dot2')[0];
-const dot3 = document.getElementsByClassName('dot3')[0];
-const dot4 = document.getElementsByClassName('dot4')[0];
-const dot5 = document.getElementsByClassName('dot5')[0];
-const dot6 = document.getElementsByClassName('dot6')[0];
-const dot7 = document.getElementsByClassName('dot7')[0];
-dot1.classList.add('show');
-
 function getDice() {
+    // Write your code here 👇
+    const minDice = 1;
+    const maxDice = 6;
+    
+    const dot1 = document.getElementsByClassName('dot1')[0];
+    const dot2 = document.getElementsByClassName('dot2')[0];
+    const dot3 = document.getElementsByClassName('dot3')[0];
+    const dot4 = document.getElementsByClassName('dot4')[0];
+    const dot5 = document.getElementsByClassName('dot5')[0];
+    const dot6 = document.getElementsByClassName('dot6')[0];
+    const dot7 = document.getElementsByClassName('dot7')[0];
+
     const getValue = getRandomNumber(minDice, maxDice);
     console.log(getValue);
     dot1.classList.remove('show');
