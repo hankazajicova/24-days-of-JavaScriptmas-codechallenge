@@ -1,0 +1,53 @@
+body {
+    background-color: #AEB8FE;
+    display: flex;
+}
+
+.dice {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #EFE5DC;
+    margin: 100px auto;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: black;
+    position: absolute;
+    display: none;
+}
+
+.dot.show {
+    display: block;
+}
+
+.dot1 {
+    margin: 35px;
+}
+
+.dot2 {
+    margin: 3px;
+}
+
+.dot3 {
+    margin: 67px 3px 3px 67px;
+}
+
+.dot4 {
+    margin: 67px 67px 3px 3px;
+}
+
+.dot5 {
+    margin: 3px 3px 67px 67px;
+}
+
+.dot6 {
+    margin: 35px 67px 35px 3px;
+}
+
+.dot7 {
+    margin: 35px 3px 35px 67px;
+}
